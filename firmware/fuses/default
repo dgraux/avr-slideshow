@@ -1,0 +1,10 @@
+#!/bin/sh
+
+###########################
+# Change fuses to run put #
+# back the low fuse to    #
+# default configuration   #
+###########################
+
+avrdude -p m168 -c usbasp -C ../avrdude.conf -v -e -b 115200 -U lfuse:w:0x62:m
+

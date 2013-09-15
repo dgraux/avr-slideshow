@@ -1,0 +1,18 @@
+###
+# gitignore file for this project
+###
+
+# Files relating to project compilation
+*.[ao]
+*.elf
+*.eps
+*.lst
+*.map
+*.hex
+*.bin
+*.srec
+
+# Files relating to documentation
+
+# Various files
+*~

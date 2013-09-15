@@ -1,0 +1,8 @@
+#!/bin/sh
+
+###########################
+# Change fuses to run an  #
+# external oscillator     #
+###########################
+
+avrdude -p m168 -c usbasp -C ../avrdude.conf -v -e -b 115200 -U lfuse:w:0xE7:m
